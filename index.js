@@ -14,12 +14,12 @@ app.get('/', (req, res) => {
   res.send('YaY Your Bot Status Changed✨');
 });
 app.listen(port, () => {
-  console.log(`🔗 Listening to RTX: http://localhost:${port}`);
+  console.log(`🔗 Listening to Nexus`);
   console.log(`🔗 Powered By RTX`);
 });
 
 
-const statusMessages = ["Listening Helping Cybernetic Utilitys"];
+const statusMessages = ["Listening Helping Nexus Network"];
 
 
 let currentIndex = 0;
@@ -41,7 +41,7 @@ function updateStatusAndSendMessages() {
 
   client.user.setPresence({
     activities: [{ name: currentStatus, type: ActivityType.Custom}],
-    status: 'dnd',
+    status: 'idle',
   });
 
   

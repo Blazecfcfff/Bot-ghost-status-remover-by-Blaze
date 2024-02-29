@@ -15,7 +15,7 @@ app.get('/', (req, res) => {
 });
 app.listen(port, () => {
   console.log(`🔗 Listening to Nexus`);
-  console.log(`🔗 Powered By RTX`);
+  console.log(`🔗 Powered By Nexus`);
 });
 
 
